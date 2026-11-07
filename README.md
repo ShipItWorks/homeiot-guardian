@@ -2,7 +2,7 @@
 
 Audit home Wi-Fi security, discover smart devices, harden your connected home.
 
-**Score: 73 / 100** on the [ShipItWorks rubric](https://shipitworks.com/how-we-score/). Stage: Beta. As of 2026-11-02, from the [product page](https://shipitworks.com/apps/#HomeIoTGuardian).
+**Score: 73 / 100** on the [ShipItWorks rubric](https://shipitworks.com/how-we-score/). Stage: Beta. As of 2026-11-07, from the [product page](https://shipitworks.com/apps/#HomeIoTGuardian).
 
 Every number on the product page names the file it came from. The lists below are copied from that page, not rewritten.
 
@@ -17,9 +17,9 @@ Every number on the product page names the file it came from. The lists below ar
 
 ## Not done yet
 
-- Not run on a device or a real LAN this pass: the mDNS/SSDP scan, the PDF render and the notification prompt
-- 12x14 closed test not started per repo docs; no signed .aab built here
-- No user guide beyond the release docs; lintDebug still exits 1
+- Not run on a device or a real LAN this pass: the mDNS/SSDP scan, the PDF render and the notification prompt are logic-tested only
+- 12x14 closed test not started per repo docs; no signed .aab built here (no upload key on this machine)
+- No user guide beyond the release docs; lintDebug still exits 1 on a ByteOrderMark false positive
 - TalkBack, contrast and large-font checks never run; no reduced-motion setting in the app
 
 ## Demo
