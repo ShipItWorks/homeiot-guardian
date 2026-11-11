@@ -2,7 +2,7 @@
 
 Audit home Wi-Fi security, discover smart devices, harden your connected home.
 
-**Score: 66 / 100** on our own [rubric](https://shipitworks.com/how-we-score/). Stage: Beta. Scored 2026-11-08; this record was updated 2026-11-08 from the [product page](https://shipitworks.com/apps/#HomeIoTGuardian).
+**Score: 66 / 100** on our own [rubric](https://shipitworks.com/how-we-score/). Stage: Beta. Scored 2026-11-10; this record was updated 2026-11-10 from the [product page](https://shipitworks.com/apps/#HomeIoTGuardian).
 
 Every number on the product page names the file it came from. The lists below are copied from that page, not rewritten.
 
@@ -19,17 +19,19 @@ Every number on the product page names the file it came from. The lists below ar
 ## Not done yet
 
 - Readiness report / PDF export (Not tested yet)
-- No feature has a proof log on main: five are built and tested with sample data on a desktop JVM, one (PDF export) is not tested yet
+- No feature has a run log from a phone or a real network on main: five are built and tested with sample data on a desktop JVM, one (PDF export) is not tested yet
 - Not run on a phone or a real home network: the mDNS/SSDP scan, the router port check, the PDF render and the notification prompt
 - The PDF export attempt on the JVM failed (4 of 4 tests, 2026-11-07); it needs a device or an instrumented test
-- README links proof/unit-tests.log, proof/catalog-counts.log and proof/upnp-fetch-http.log; none of the three is on main
+- README links proof/upnp-fetch-http.log and proof/port-connect-sockets.log; neither is on main at 8ebed11
 - 12x14 closed test not started per repo docs; no signed .aab built here (no upload key on this machine)
-- No CHANGELOG and no LICENSE file on main; no user guide beyond the release docs; lintDebug exit 1 on a ByteOrderMark false positive was reported earlier and not re-run
+- No LICENSE file on main (the licence is held for the owner, though CHANGELOG.md lists one); no user guide beyond the release docs; lintDebug exit 1 on a ByteOrderMark false positive was reported earlier and not re-run
 - TalkBack, contrast and large-font checks not run; no reduced-motion setting in the app
 - Network use not yet traced (no network capture); cleartext traffic is permitted in the base network config
 
 ## What changed
 
+- 2026-11-10: Site copy only: a dated correction now sits under the demo video for the narration line at 2:20, and the privacy policy page on this site shows 'not from internet addresses' with a limit beside it. No code or score change.
+- 2026-11-10: Land PR #26 merged into main as 8ebed11 (11 lane PRs included); no feature label changed this round. Tagged v0.2.0 at 8ebed11.
 - 2026-11-08: Rescored under the per-feature rule: no core feature has a run log on main, so five count as built and tested with sample data (half share each) and the PDF export counts as not tested yet. 66/100 on our own rubric (was 73). Release tag v0.1.3.
 - 2026-11-08: The UPnP description fetch now has tests of its HTTP behaviour over local sockets (PR #24, tag v0.1.3); the log it points to is not on main. CI now runs on the self-hosted runner (PR #23).
 - 2026-11-07: The public contact is now support@shipitworks.com in the privacy policy, the Play listing draft and the project site pages, and the README has an AI use section. Release v0.1.2.
