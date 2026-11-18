@@ -2,6 +2,12 @@
 
 Public record of changes to HomeIoTGuardian, written from the product page on shipitworks.com. The source is private. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Release tags exist on the private repository's default branch.
 
+## 2026-11-18 (release v0.2.0)
+
+- 2026-11-18: A review at commit d96164b corrected three lines here: the base network config turns plain HTTP off, one real-phone scan is recorded in the repo, and the open-port check has run on an emulator. The one-line description now says the Wi-Fi checks are guided. No feature label or score changed.
+
+Score 66 / 100 on our own rubric, scored 2026-11-12. Product page: https://shipitworks.com/homeiotguardian/
+
 ## 2026-11-10 (release v0.2.0)
 
 - 2026-11-10: Site copy only: a dated correction now sits under the demo video for the narration line at 2:20, and the privacy policy page on this site shows 'not from internet addresses' with a limit beside it. No code or score change.
